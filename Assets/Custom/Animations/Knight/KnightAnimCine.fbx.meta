@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 4a17572acceae8d43acbbfa5f1384fec
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -2062074773753952957
+    second: metarig|Death
+  - first:
+      74: -8112664613126445026
+    second: metarig|DeathScreenCards
+  - first:
+      74: 8101392235243650043
+    second: metarig|DeathScreenIntro
+  - first:
+      74: 8960292827517953479
+    second: metarig|DeathScreenOutro
+  - first:
+      74: -2330571230993806607
+    second: metarig|DoorOpen
+  - first:
+      74: 8157034626360698652
+    second: metarig|FallingFrantically
+  - first:
+      74: -3846276377961558067
+    second: metarig|HolsterSword
+  - first:
+      74: 8470939491606602787
+    second: metarig|LightAttack1
+  - first:
+      74: -6386463856812539081
+    second: metarig|LightAttack2
+  - first:
+      74: -1767349127474350147
+    second: metarig|LightAttack3
+  - first:
+      74: 1901158800670171180
+    second: metarig|LightAttack4
+  - first:
+      74: -5468766645663863925
+    second: metarig|RunningHeavySword
+  - first:
+      74: -5614114068054717480
+    second: metarig|RunningLightSword
+  - first:
+      74: 4708645428742810038
+    second: metarig|Stun
+  - first:
+      74: -171679256799874515
+    second: metarig|StunGroundLay
+  - first:
+      74: 1754432339952635820
+    second: metarig|StunIdle
+  - first:
+      74: 7410667152586295326
+    second: metarig|StunLay to Stand
+  - first:
+      74: 3199725291945974578
+    second: metarig|StunNoRotate
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knight
+    second: {fileID: 2100000, guid: 0f0a28dd00a8a914ea89142162f9b611, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
