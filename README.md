@@ -1,5 +1,5 @@
 # GameJam-Autorunner
-A small autorunner project I created as a part of a two week gamejam for a class. Automatically generated levels, random abilities and stat upgrades, 4 gamemodes, tutorial, etc.
+A small autorunner project I created as a part of a two week gamejam for a class. Automatically generated levels, random abilities and stat upgrades, 4 gamemodes, tutorial, etc. (Created in Unity 2020.3.28f1)
 
 I don't really have plans to expand this further, its a quick little time waster game, so maybe a mobile port, but other than that I'm pretty satisfied with how it is.
 
