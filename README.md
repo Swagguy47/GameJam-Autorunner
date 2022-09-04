@@ -1,7 +1,9 @@
 # GameJam-Autorunner
 A small autorunner project I created as a part of a two week gamejam for a class. Automatically generated levels, random abilities and stat upgrades, 4 gamemodes, tutorial, etc. (Created in Unity 2020.3.28f1)
 
-I don't really have plans to expand this further, its a quick little time waster game, so maybe a mobile port, but other than that I'm pretty satisfied with how it is.
+Its a quick little time waster game, I'm pretty satisfied with, and turned out to be unexpectedly pretty enjoyable on mobile especially.
+
+I plan on expanding this project further for an eventual *proper* release on mobile platforms.
 
 You may make modifications and look around and stuff, use scripts as a base, whatever. Just don't make any full product out of it without credit, and I'd prefer you keep branches non commercial, though I can make exceptions if needed. Thanks.
 
