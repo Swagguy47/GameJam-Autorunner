@@ -38,6 +38,41 @@ public class GameLogic : MonoBehaviour
 
     public DeathCinematicTriggers DeathCine;
 
+    [HideInInspector] public int CurrentDifficulty;
+
+    private void Start()
+    {
+        //New for defenitive edition:
+        //Sets up difficulty variables based off new global vars
+        CurrentDifficulty = GlobalVariables.GameDifficulty;
+        //-------------------------------------------------------------
+        if (CurrentDifficulty == 0)//easy
+        {
+            Player.HealthReset = 3; //Health
+            Player.DifficultyDistance = 500; //Win Distance
+        }
+        //-------------------------------------------------------------
+        else if (CurrentDifficulty == 1)//medium
+        {
+            Player.HealthReset = 2; //Health
+            Player.DifficultyDistance = 1000; //Win Distance
+        }
+        //-------------------------------------------------------------
+        else if (CurrentDifficulty == 2)//hard
+        {
+            Player.HealthReset = 1; //Health
+            Player.DifficultyDistance = 1500; //Win Distance
+        }
+        //-------------------------------------------------------------
+        else if (CurrentDifficulty == 3)//endless
+        {
+            Player.HealthReset = 2; //Health
+            Player.DifficultyDistance = 99999999; //Win Distance
+        }
+        //-------------------------------------------------------------
+        Player.Health = Player.HealthReset;
+    }
+
     private void Update()
     {
         LevelTime += Time.deltaTime;

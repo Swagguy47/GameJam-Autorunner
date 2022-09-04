@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public MobileControl MobileControl;
+    
     public float DifficultyDistance = 1000;
     
     public float Gravity = -9.81f;
@@ -75,10 +77,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+            //SceneManager.LoadScene("MainMenu");
+        //}
 
         UpdateAnimator();
 
@@ -98,7 +100,7 @@ public class PlayerController : MonoBehaviour
             }
             if (MeleeDelay <= 0 && !Stunned)
             {
-                if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
+                if (MobileControl.Attack)//|| Input.GetMouseButtonDown(0)) PC Mouse Controls
                 {
                     MeleeDelay = MeleeReset;
                     Attack();
@@ -123,7 +125,7 @@ public class PlayerController : MonoBehaviour
                     SecondJump = true;
                 }
                 ItemMeter.SetActive(false);
-                if (Input.GetKeyDown(KeyCode.LeftShift) && Item != 2)
+                if (MobileControl.Ability && Item != 2)
                 {
                     Debug.Log("LShift");
                     if (Item != 0)
@@ -232,7 +234,7 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                 }
-                else if (Input.GetKeyDown(KeyCode.Space) && Item == 2 && Grounded == false && SecondJump == true && !Dead)//Double jump
+                else if (MobileControl.Jump && Item == 2 && Grounded == false && SecondJump == true && !Dead)//Double jump
                 {
                     Debug.Log("DOUBLE JUMP");
                     SecondJump = false;
@@ -263,7 +265,7 @@ public class PlayerController : MonoBehaviour
                     SelfRB.velocity = new Vector2(12, SelfRB.velocity.y);
                 }
                 SelfForce.force = new Vector2(0, Gravity * gravitySwap); //Gravity
-                if (Input.GetKeyDown(KeyCode.Space) && Grounded && !Dead)
+                if (MobileControl.Jump && Grounded && !Dead)
                 {
                     SelfRB.AddRelativeForce(new Vector2(0, JumpForce), ForceMode2D.Force);
                     Debug.Log("Jump");

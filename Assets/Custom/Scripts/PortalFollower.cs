@@ -40,7 +40,7 @@ public class PortalFollower : MonoBehaviour
             storedPositions.Add(player.transform.position); //store the position every frame
         }
 
-        if (storedPositions.Count > followDistance)
+        if (storedPositions.Count > followDistance * Time.deltaTime * 50)
         {
             transform.position = storedPositions[0]; //move
             storedPositions.RemoveAt(0); //delete the position that player just move to

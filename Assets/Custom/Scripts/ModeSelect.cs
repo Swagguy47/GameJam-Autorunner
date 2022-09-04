@@ -12,18 +12,22 @@ public class ModeSelect : MonoBehaviour
 
     public void LoadEasy()
     {
-        SceneManager.LoadScene("Easy");
+        GlobalVariables.GameDifficulty = 0;
+        SceneManager.LoadScene("Game");
     }
     public void LoadMedium()
     {
-        SceneManager.LoadScene("Medium");
+        GlobalVariables.GameDifficulty = 1;
+        SceneManager.LoadScene("Game");
     }
     public void LoadHard()
     {
-        SceneManager.LoadScene("Hard");
+        GlobalVariables.GameDifficulty = 2;
+        SceneManager.LoadScene("Game");
     }
     public void LoadEndless()//Dunno if I have the time to add this
     {
-        SceneManager.LoadScene("Endless");
+        GlobalVariables.GameDifficulty = 3;
+        SceneManager.LoadScene("Game");
     }
 }
